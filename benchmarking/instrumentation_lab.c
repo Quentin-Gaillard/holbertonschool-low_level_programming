@@ -102,7 +102,7 @@ int main(void)
      printf("TOTAL seconds: %.6f\n", t_sec);
      printf("BUILD_DATA seconds: %.6f\n", b_sec);
      printf("PROCESS seconds: %.6f\n", p_sec);
-     printf("REDUCE seconds :%.6f\n", r_sec);
+     printf("REDUCE seconds: %.6f\n", r_sec);
 
     return 0;
 }
