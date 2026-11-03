@@ -3,7 +3,8 @@
 /**
  * print_rev - Prints a string, in reverse, followed by a new line.
  * @s: A pointer to the string to print.
- * ici on doit partir au bout de la phrase pour compter et ensuite revenir au débit.
+ * ici on doit partir au bout de la phrase pour compter et
+ * ensuite revenir au débit.
  * Return: void.
  */
 void print_rev(char *s)
