@@ -3,10 +3,10 @@
 
 /**
  * print_array - indique n éléments d'un tableau d'entiers
- * @a = pointeur du premier élément du tableau (array)
- * @n = le nombre d'éléments à indiquer (print)
+ * @a: pointeur du premier élément du tableau (array)
+ * @n: le nombre d'éléments à indiquer (print)
  *
- * Return void
+ * Return: void
  */
 void print_array(int *a, int n)
 {
