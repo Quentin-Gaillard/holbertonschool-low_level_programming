@@ -1,21 +1,26 @@
 #include "main.h"
 
 /**
- * _strcmp - Compares two strings
- * @s1: The first string to be compared
- * @s2: The second string to be compared
+ * _strncpy - Copie une chaîne de caractères jusqu'à n octets
+ * @dest: Pointeur vers la chaîne de destination
+ * @src: Pointeur vers la chaîne source
+ * @n: Nombre maximal d'octets à copier
  *
- * Return: The difference between the first non-matching characters,
- *         or 0 if strings are identical.
+ * Return: Pointeur vers dest
  */
-int _strcmp(char *s1, char *s2)
+char *_strncpy(char *dest, char *src, int n)
 {
-	int i = 0;
+	int i;
 
-	while (s1[i] != '\0' && s1[i] == s2[i])
+	for (i = 0; i < n && src[i] != '\0'; i++)
 	{
-		i++;
+		dest[i] = src[i];
 	}
 
-	return (s1[i] - s2[i]);
+	for (; i < n; i++)
+	{
+		dest[i] = '\0';
+	}
+
+	return (dest);
 }
