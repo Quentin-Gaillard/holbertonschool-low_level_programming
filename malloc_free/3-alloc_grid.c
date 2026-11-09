@@ -50,6 +50,5 @@ int **alloc_grid(int width, int height)
 		}
 		row_ptr++;
 	}
-
 	return (grid);
 }
