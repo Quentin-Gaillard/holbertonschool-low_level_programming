@@ -22,7 +22,7 @@ char *_strdup(char *str)
 	}
 
 	len = 0;
-	while(str[len] != '\0')
+	while (str[len] != '\0')
 	{
 		len++;
 	}
@@ -35,7 +35,7 @@ char *_strdup(char *str)
 	}
 
 	i = 0;
-	while(i <= len)
+	while (i <= len)
 	{
 		copy[i] = str[i];
 		i++;
