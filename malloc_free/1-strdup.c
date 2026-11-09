@@ -22,12 +22,12 @@ char *_strdup(char *str)
 	}
 
 	len = 0;
-	while (str[len] != '\0')
+	while(str[len] != '\0')
 	{
 		len++;
 	}
 
-	copy = malloc ((len +1) * sizeof(char));
+	copy = malloc((len + 1) * sizeof(char));
 
 	if (copy == NULL)
 	{
@@ -35,7 +35,7 @@ char *_strdup(char *str)
 	}
 
 	i = 0;
-	while (i <= len)
+	while(i <= len)
 	{
 		copy[i] = str[i];
 		i++;
