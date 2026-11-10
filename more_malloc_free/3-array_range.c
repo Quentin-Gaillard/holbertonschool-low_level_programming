@@ -19,7 +19,7 @@ int *array_range(int min, int max)
 	if (min > max)
 		return (NULL);
 
-	tableau = malloc ((max - min + 1) * sizeof (int));
+	tableau = malloc((max - min + 1) * sizeof (int));
 	if (tableau == NULL)
 		return (NULL);
 
