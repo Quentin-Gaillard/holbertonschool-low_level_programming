@@ -11,23 +11,23 @@
 
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-    void *ptr;
-    char *filler;
-    unsigned int total_size, i;
+	void *ptr;
+	char *filler;
+	unsigned int total_size, i;
 
-    if (nmemb == 0 || size == 0)
-    {
-	return (NULL);
-    }
-        total_size = nmemb * size;
+	if (nmemb == 0 || size == 0)
+	{
+		return (NULL);
+	}
+	total_size = nmemb * size;
 
-        ptr = malloc(total_size);
-        if (ptr == NULL)
-            return (NULL);
+	ptr = malloc(total_size);
+	if (ptr == NULL)
+		return (NULL);
 
-        filler = ptr;
-        for (i = 0; i < total_size; i++)
-            *filler++ = 0;
+	filler = ptr;
+	for (i = 0; i < total_size; i++)
+	*filler++ = 0;
 
-        return (ptr);
+	return (ptr);
 }
