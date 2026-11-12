@@ -15,6 +15,13 @@ struct dog
 	char *owner;
 };
 
+/**
+ * dog_t - typedef for struct dog
+ * taper typedef [Ancien nom] suivi du [nouveau nom] (un peu comme un alias).
+ */
+
+typedef struct dog dog_t;
+
 void init_dog(struct dog *d, char *name, float age, char *owner);
 void print_dog(struct dog *d);
 
