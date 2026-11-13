@@ -107,7 +107,8 @@ int main(void)
 		{
 			/*
 			 * %lf = long float pour lire un double
-			 * %g = supprime les zero inutiles après la virgule
+			 * %g = supprime les zero inutiles après la virgule.
+			 * divisions avec décimales
 			 */
 
 				printf("A: ");
@@ -118,20 +119,31 @@ int main(void)
 				break;
 
 			if (choice == 1)
+			{
 				result = add(a, b);
+				printf("Result: %g\n", result);
+			}
 			else if (choice == 2)
+			{
 				result = substract(a, b);
+				printf("Result: %g\n", result);
+			}
 			else if (choice == 3)
+			{
 				result = multiply(a, b);
+				printf("Result: %g\n", result);
+			}
 			else if (choice == 4)
 			{
 				if (b == 0)
 					printf("ERROR: division by zero\n");
 				else
+				{
 					result = divide(a, b);
+					printf("Result: %g\n", result);
+				}
 			}
 
-			printf("Result: %g\n", result);
 		}
 	}
 
