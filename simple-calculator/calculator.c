@@ -29,7 +29,7 @@ double add(double a, double b)
 }
 /**
  * TACHE 3.
- * add - Soustrait deux nombres
+ * substract - Soustrait deux nombres
  * @a: Premier nombre
  * @b: Deuxième nombre
  *
@@ -38,6 +38,18 @@ double add(double a, double b)
 double substract(double a, double b)
 {
 	return (a - b);
+}
+/**
+ * TACHE 4.
+ * multiply - Multiplie deux nombres
+ * @a: Premier nombre
+ * @b: Deuxième nombre
+ *
+ * Return: résultat de la multiplcation des deux nombres
+ */
+double multiply(double a, double b)
+{
+	return (a * b);
 }
 
 /**
@@ -100,8 +112,10 @@ int main(void)
 
 			if (choice == 1)
 				result = add(a, b);
-			else if  (choice == 2)
+			else if (choice == 2)
 				result = substract(a, b);
+			else if (choice == 3)
+				result = multiply(a, b);
 
 			printf("Result: %g\n", result);
 		}
