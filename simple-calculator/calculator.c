@@ -52,6 +52,13 @@ double multiply(double a, double b)
 	return (a * b);
 }
 
+
+
+double divide(double a, double b)
+{
+	return (a / b);
+}
+
 /**
  * main - Ici, première intéraction avec l'utilisateur
  * TACHE 0
@@ -116,6 +123,13 @@ int main(void)
 				result = substract(a, b);
 			else if (choice == 3)
 				result = multiply(a, b);
+			else if (choice == 4)
+			{
+				if (b == 0)
+					printf("ERROR: division by zero\n");
+				else
+					result = divide(a, b);
+			}
 
 			printf("Result: %g\n", result);
 		}
