@@ -21,11 +21,23 @@ void print_menu(void)
  * @a: Premier nombre
  * @b: Deuxième nombre
  *
- * Return: Sum of a and b
+ * Return: résultat de la somme des deux nombres
  */
 double add(double a, double b)
 {
 	return (a + b);
+}
+/**
+ * TACHE 3.
+ * add - Soustrait deux nombres
+ * @a: Premier nombre
+ * @b: Deuxième nombre
+ *
+ * Return: résultat de la soustraction des deux nombres
+ */
+double substract(double a, double b)
+{
+	return (a - b);
 }
 
 /**
@@ -41,11 +53,13 @@ int main(void)
 	 * infinie et pas 1,2,3,4 pour que le code soit lisible
 	 */
 	int choice = -1;
-	/* TACHE 2, ajout a, b, result pour l'addition*/
-	double a, b, result;
+	/* TACHE 2, ajout a, b, result pour l'addition,
+	 *TACHE 3, on ajoute = 0,
+	 */
+	double a, b, result = 0;
 
 	/*TACHE 0 : Affiche la banière Simple Calculator */
-	printf("Welcome to my first Simple calculator\n");
+	printf("Welcome to my first Simple calculator, tas d'apprenants' \n");
 
 	/*TACHE 0 Ici, PREMIERE intéraction avec l'utilisateur */
 	while (choice != 0)
@@ -70,7 +84,7 @@ int main(void)
 			printf("Invalid choice\n");
 		}
 		/* TACHE 2 a partir d'ici avec comme choix 1 */
-		else if (choice == 1)
+		else
 		{
 			/*
 			 * %lf = long float pour lire un double
@@ -84,8 +98,12 @@ int main(void)
 			if (scanf("%lf", &b) != 1)
 				break;
 
-			result = add(a, b);
-			printf("result: %g\n", result);
+			if (choice == 1)
+				result = add(a, b);
+			else if  (choice == 2)
+				result = substract(a, b);
+
+			printf("Result: %g\n", result);
 		}
 	}
 
