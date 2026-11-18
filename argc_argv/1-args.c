@@ -10,7 +10,8 @@
 
 int main(int argc, char *argv[])
 {
-	/** ici (void)argc; indique au compilateur quon SAIT que cette variable
+	/**
+	 * ici (void)argc; indique au compilateur quon SAIT que cette variable
 	 * existe MAIS que je ne m'en sers pas, avec argc -1 pour faire sauter
 	 * le premier argument argv[0] ./nargs
 	 */
