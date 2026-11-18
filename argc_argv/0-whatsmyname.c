@@ -10,11 +10,13 @@
 
 int main(int argc, char *argv[])
 {
-	/* ici (void)argc; indique au compilateur qu'on SAIT que cette variable
-	existe MAIS que je ne m'en sers pas */
+	/**
+	 * ici (void)argc; indique au compilateur qu'on SAIT que cette variable
+	 * existe MAIS que je ne m'en sers pas
+	 */
 	(void)argc;
 
 	printf("%s\n", argv[0]);
 
-	return(0);
+	return (0);
 }
