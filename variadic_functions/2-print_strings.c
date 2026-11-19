@@ -43,5 +43,5 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	}
 	/* On ferme le tapis roulant et on saute une ligne a la fin */
 	va_end(liste_args);
-	printf("n");
+	printf("\n");
 }
