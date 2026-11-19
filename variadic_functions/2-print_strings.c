@@ -18,7 +18,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	va_start(liste_args, n);
 
 	/* On parcourt les n strings une par une */
-	for (i=0; i < n; i++)
+	for (i = 0; i < n; i++)
 	{
 		/* 1. On attrape la chaine suivante sur le tapis roulant */
 		texte = va_arg(liste_args, char *);
