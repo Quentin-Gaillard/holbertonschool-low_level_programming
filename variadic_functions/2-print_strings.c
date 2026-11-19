@@ -29,7 +29,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 		}
 		else
 		{
-			printf("s", texte);
+			printf("%s", texte);
 		}
 		/* 3. On verifie si on est AVANT la derniere chaine */
 		if (i < n - 1)
