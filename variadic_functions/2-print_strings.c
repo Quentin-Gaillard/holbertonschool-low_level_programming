@@ -20,7 +20,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	/* On parcourt les n strings une par une */
 	for (i = 0; i < n; i++)
 	{
-		/* 1. On attrape la chaine suivante sur le tapis roulant */
+		/* 1. On attrape la chaine suivante */
 		texte = va_arg(liste_args, char *);
 		/* 2. On verifie si la chaine est NULL ou valide */
 		if (texte == NULL)
@@ -41,7 +41,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 			}
 		}
 	}
-	/* On ferme le tapis roulant et on saute une ligne a la fin */
+	/* On ferme la fonction et on saute une ligne a la fin */
 	va_end(liste_args);
 	printf("\n");
 }
