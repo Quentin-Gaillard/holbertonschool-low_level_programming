@@ -25,7 +25,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 		/* 2. On verifie si la chaine est NULL ou valide */
 		if (texte == NULL)
 		{
-			printf("(nol)");
+			printf("(nil)");
 		}
 		else
 		{
