@@ -31,13 +31,6 @@ int op_div(int a, int b)
 	return (a / b);
 }
 
-/**
- * op_mod - Calcule le reste de la division de deux entiers
- * @a: Dividende (nombre a diviser)
- * @b: Diviseur
- *
- * Return: Le reste de la division de a par b.
- */
 int op_mod(int a, int b)
 {
 	/* Calcule le modulo de a par b et renvoie le reste */
