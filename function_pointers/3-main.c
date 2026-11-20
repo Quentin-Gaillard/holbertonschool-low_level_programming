@@ -3,7 +3,7 @@
 #include "3-calc.h"
 
 /**
- * main - Effectue des operations arithmetiques simples via la ligne de commande
+ * main - Effectue des operations arithmetique simples via la ligne de commande
  * @argc: Nombre d'arguments passes au programme
  * @argv: Tableau de chaines contenant les arguments
  *
