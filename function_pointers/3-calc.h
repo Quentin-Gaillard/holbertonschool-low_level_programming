@@ -1,7 +1,7 @@
 #ifndef CALC_H
 #define CALC_H
 
-#include <stddef>
+#include <stddef.h>
 
 /**
  * struct op - Structure associan un opérateur a sa fonction de calcul
