@@ -8,7 +8,6 @@
  * Return: the number of nodes in the list
  */
 
-
 size_t print_list(const list_t *h)
 {
 	size_t count = 0;
