@@ -20,7 +20,7 @@
 	{
 		if (current->str == NULL)
 		{
-			printf(" (nil)\n");
+			printf("[0] (nil)\n");
 		}
 		else
 		{
